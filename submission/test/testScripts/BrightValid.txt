@@ -1,0 +1,2 @@
+load test/res/pixel.ppm pixel
+brighten 10 pixel pixel-brighter

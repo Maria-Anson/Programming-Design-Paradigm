@@ -1,0 +1,3 @@
+load test/res/pixel.ppm pixel
+greyscale test/blue-component pixel pixel-gblue2
+save test/res/pixel-gblue2.ppm pixel-gblue2

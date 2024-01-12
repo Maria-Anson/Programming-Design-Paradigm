@@ -1,0 +1,3 @@
+load test/res/pixel.ppm pixel
+greyscale intensity-component pixel pixel-gintensity2
+save test/res/pixel-gintensity2.ppm pixel-gintensity2

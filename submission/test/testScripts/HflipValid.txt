@@ -1,0 +1,3 @@
+load test/res/pixel.ppm pixel
+horizontal-flip pixel pixel-hflip2
+save test/res/pixel-hflip2.ppm pixel-hflip2

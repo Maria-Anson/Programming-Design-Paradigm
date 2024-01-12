@@ -1,0 +1,86 @@
+# load pixel.ppm and call it 'pixel'
+load pixel.ppm pixel
+# brighten
+brighten 10 pixel pixel-brighter
+save out/pixel-brighter.ppm pixel-brighter
+# darken
+brighten -20 pixel pixel-darken
+save out/pixel-darken.ppm pixel-darken
+# hflip
+horizontal-flip pixel pixel-horizontal
+save out/pixel-horizontal.ppm pixel-horizontal
+# vflip
+vertical-flip pixel pixel-vertical
+save out/pixel-vertical.ppm pixel-vertical
+# split
+rgb-split pixel pixel-red pixel-green pixel-blue
+save out/pixel-red.ppm pixel-red
+save out/pixel-green.ppm pixel-green
+save out/pixel-blue.ppm pixel-blue
+# combine
+rgb-combine pixel-combine pixel-red pixel-green pixel-blue
+save out/pixel-combine.ppm pixel-combine
+# greyscale red,green,blue,luma,value,intensity
+greyscale red-component pixel pixel-gred
+save out/pixel-gred.ppm pixel-gred
+greyscale green-component pixel pixel-ggreen
+save out/pixel-ggreen.ppm pixel-ggreen
+greyscale blue-component pixel pixel-gblue
+save out/pixel-gblue.ppm pixel-gblue
+greyscale luma-component pixel pixel-gluma
+save out/pixel-gluma.ppm pixel-gluma
+greyscale intensity-component pixel pixel-gintensity
+save out/pixel-gintensity.ppm pixel-gintensity
+greyscale value-component pixel pixel-gvalue
+save out/pixel-gvalue.ppm pixel-gvalue
+# blur
+blur pixel pixel-blur
+save out/pixel-blur.ppm pixel-blur
+# sharpen
+sharpen pixel pixel-sharpen
+save out/pixel-sharpen.ppm pixel-sharpen
+# sepia
+sepia pixel pixel-sepia
+save out/pixel-sepia.ppm pixel-sepia
+# transform greyscale
+greyscale pixel pixel-greyscale
+save out/pixel-greyscale.ppm pixel-greyscale
+# dither
+dither pixel pixel-dither
+# saving in every format
+save out/pixel-dither-ppm.ppm pixel-dither
+save out/pixel-dither-png.png pixel-dither
+save out/pixel-dither-jpg.jpg pixel-dither
+save out/pixel-dither-bmp.bmp pixel-dither
+# ppm to png
+load dot.ppm dot
+sepia dot dot-sepia
+save out/dot-sepia-png.png dot-sepia
+# png to ppm
+load chase.png chase
+blur chase chase-blur
+save out/chase-blur.ppm chase-blur
+# png to jpg
+load chase.png chase
+blur chase chase-blur
+save out/chase-blur-jpg.jpg chase-blur
+# png to bmp
+load chase.png chase
+blur chase chase-blur
+save out/chase-blur-bmp.bmp chase-blur
+# bmp to jpg
+load photo.bmp photo
+sharpen photo photo-sharpen
+save out/photo-sharpen.jpg photo-sharpen
+# jpg to bmp
+load discover.jpg discover
+dither discover discover-dither
+save out/discover-dither.bmp discover-dither
+
+
+
+
+
+
+
+
