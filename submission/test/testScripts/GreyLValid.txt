@@ -1,3 +1,0 @@
-load test/res/pixel.ppm pixel
-greyscale luma-component pixel pixel-gluma2
-save test/res/pixel-gluma2.ppm pixel-gluma2

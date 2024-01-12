@@ -1,3 +1,0 @@
-load test/res/pixel.ppm pixel
-greyscale green-component pixel pixel-ggreen2
-save test/res/pixel-ggreen2.ppm pixel-ggreen2

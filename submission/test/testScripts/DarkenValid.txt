@@ -1,3 +1,0 @@
-load test/res/pixel.ppm pixel
-brighten -10 pixel pixel-d2
-#save test/res/pixel-d2.ppm pixel-d2

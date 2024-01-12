@@ -1,3 +1,0 @@
-load test/res/pixel.ppm pixel
-greyscale value-component pixel pixel-gvalue2
-save test/res/pixel-gvalue2.ppm pixel-gvalue2

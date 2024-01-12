@@ -1,3 +1,0 @@
-load test/res/pixel.ppm pixel
-vertical-flip pixel pixel-vflip2
-save test/res/pixel-vflip2.ppm pixel-vflip2
